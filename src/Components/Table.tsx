@@ -54,6 +54,7 @@ const Table = ({
       )
     );
   }
+  console.log(Date.now())
   function AddForm(e: React.FormEvent) {
     e.preventDefault();
     let newUser = {
@@ -79,7 +80,7 @@ const Table = ({
       email: emailE,
       status: edit.status,
     };
-    setUSers(users.map((user) => (user.id == edit.id ? updateUser : user)));
+    setUSers(users.map((user:IUser) => (user.id == edit.id ? updateUser : user)));
     setOpenE(false);
   }
 
@@ -207,7 +208,7 @@ const Table = ({
               value={emailE}
               onChange={(e) => setEmailE(e.target.value)}
               fullWidth
-              label="Email..."
+              label="Email..." 
             />
             <div className="flex gap-[20px] items-center">
               <button
