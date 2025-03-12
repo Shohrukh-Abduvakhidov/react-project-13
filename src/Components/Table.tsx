@@ -7,8 +7,6 @@ import { TextField } from '@mui/material'
 const Table = ({
 	users,
 	setUSers,
-	statusFilter,
-	setStatusFilter,
 	filteredData,
 	name,
 	setName,

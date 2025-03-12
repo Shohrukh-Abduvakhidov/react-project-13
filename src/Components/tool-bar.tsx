@@ -5,7 +5,6 @@ const ToolBar = ({
   setSearch,
   statusFilter,
   setStatusFilter,
-  open,
   setOpen,
 }: {
   users: IUser[];
